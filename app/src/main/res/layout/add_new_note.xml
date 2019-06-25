@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@color/lightYellow"
+      >
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add your Daily Notes"
+        android:textColor="@color/color_black"
+        android:background="@color/darkYellow"
+
+        android:padding="10dp"
+        android:textAppearance="?android:textAppearanceMedium"
+
+
+        android:gravity="center"
+        />
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightYellow"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:textColor="@color/lightYellow"
+          android:background="@color/lightYellow"
+          android:layout_height="120dp">
+          <TextView
+            android:textColor="@color/color_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="Note :"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+        </RelativeLayout>
+        <RelativeLayout
+          android:layout_width="0dp"
+          android:layout_weight="3"
+          android:background="@color/lightYellow"
+          android:layout_height="120dp">
+          <EditText
+            android:id="@+id/add_new_note"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:maxWidth="10dip"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/color_black"/>
+
+        </RelativeLayout>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+      </LinearLayout>
+
+      <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/color_black"
+        android:background="@color/darkYellow"
+        android:text="Save"
+        android:id="@+id/btn_add_save"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+
+        />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>
